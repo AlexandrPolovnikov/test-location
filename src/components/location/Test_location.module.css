@@ -1,37 +1,68 @@
 .window {
-  height: 200px;
+  height: 150px;
   width: auto;
-  border: 1px solid green;
+  border: 1px solid black;
+  border-radius: 20px;
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr; */
   grid-template-rows: 1fr 1fr 1fr;
+  margin: 8px;
+  padding: 15px;
 }
 
 .test_local {
-  border: 1px solid black;
   display: grid;
-  grid-template-columns: 90% 10%;
+  grid-template-columns: 2% 88% 10%;
   padding: 5px;
+  margin: 5px;
 }
-.test_local p {
-  text-align: center;
+.test_local button {
+  align-content: center;
+  display: grid;
+  background: none;
 }
 
 .test_info {
-  border: 1px solid red;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 5px;
+  font-size: 18px;
 }
 
 .test_prompt {
-  border: 1px solid yellow;
   display: grid;
   grid-template-columns: 1fr 9fr;
   padding: 5px;
+  font-size: 18px;
+  margin-left: 30px;
 }
 
 .test_prompt input {
   height: 40%;
   margin-top: 10px;
+}
+.local {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: fit-content;
+  height: 25px;
+  margin-left: 30px;
+}
+.enviro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: fit-content;
+  height: 25px;
+  margin-left: 30px;
+}
+.server {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: fit-content;
+  height: 25px;
+  margin-left: 30px;
+}
+
+.trash {
+  width: 30px;
+  height: 30px;
 }

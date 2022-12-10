@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+}
+
+.plus_location {
+  text-align: end;
+}
+
+.plus_location button {
+  width: 300px;
+  height: 50px;
+  padding: 5px;
+  margin: 3px;
+  border: 1px solid skyblue;
+  border-radius: 10px;
+}
+
+.plus_img {
+}

@@ -1,31 +1,45 @@
 import React from "react";
 import style from "./Test_location.module.css";
 
-const test_location = () => {
+const test_location = (props) => {
   return (
     <div className={style.window}>
       <div className={style.test_local}>
-        <div>
-          <h3>Тестовая локация</h3>
+        <div className={style.icon}>
+          <i class="fa-solid fa-vial"></i>
         </div>
         <div>
-          <p>Удалить</p>
+          <h3>
+            Тестовая локация {props.number} {props.id}
+          </h3>
+        </div>
+        <div>
+          <i
+            className={style.trash}
+            class="fa-regular fa-trash-can"
+            onClick={() => props.remove(props.post)}
+          ></i>
         </div>
       </div>
       <div className={style.test_info}>
         <div className={style.local}>
-          <p>локация</p>
+          <p>
+            Локация <i class="fa-solid fa-location-dot"></i>
+          </p>
+          <input></input>
         </div>
-        <div className={style.sreda}>
-          <p>среда</p>
+        <div className={style.enviro}>
+          <p>Среда</p>
+          <input></input>
         </div>
         <div className={style.server}>
-          <p>серверы</p>
+          <p>Серверы</p>
+          <input></input>
         </div>
       </div>
       <div className={style.test_prompt}>
-        <h3>Подсказка</h3>
-        <input />
+        <p>Подсказка</p>
+        <input></input>
       </div>
     </div>
   );
