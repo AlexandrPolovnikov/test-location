@@ -9,6 +9,10 @@
   padding: 15px;
 }
 
+.icon h3 {
+  margin-left: 15px;
+}
+
 .test_local {
   display: grid;
   grid-template-columns: 2% 88% 10%;

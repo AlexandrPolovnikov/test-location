@@ -5,13 +5,11 @@ const test_location = (props) => {
   return (
     <div className={style.window}>
       <div className={style.test_local}>
-        <div className={style.icon}>
+        <div>
           <i class="fa-solid fa-vial"></i>
         </div>
-        <div>
-          <h3>
-            Тестовая локация {props.number} {props.id}
-          </h3>
+        <div className={style.icon}>
+          <h3>Тестовая локация {props.number}</h3>
         </div>
         <div>
           <i

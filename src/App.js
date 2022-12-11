@@ -1,24 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import "./App.css";
-// import { BsPlusSquare } from "react-icons/bs";
+import { observer } from "mobx-react-lite";
+import { storeContext } from "./store.ts";
+
 import Test_list from "./components/test_list/Test_list.jsx";
 
 const App = () => {
   const [posts, setPosts] = useState([]);
-  const [post, setPost] = useState({ title: "", body: "" });
+  const [post, setPost] = useState({});
 
-  const addNewPost = (e) => {
-    e.preventDefault();
-    const newPost = {
+  const addNewTLocal = () => {
+    const newTLocal = {
       ...post,
       id: Date.now(),
     };
-    createPost(newPost);
-    setPost({ title: "", body: "" });
+    createTL(newTLocal);
   };
 
-  const createPost = (newPost) => {
-    setPosts([...posts, newPost]);
+  const createTL = (newTLocal) => {
+    setPosts([...posts, newTLocal]);
   };
 
   const removePost = (post) => {
@@ -27,12 +27,11 @@ const App = () => {
 
   return (
     <div className="App">
-      <Test_list posts={posts} remove={removePost} />
+      <Test_list posts={posts} remove={removePost} key={createTL.id} />
       <div className="plus_location">
-        <button onClick={addNewPost}>
-          <div>{/* <BsPlusSquare className="plus_img" /> */}</div>
-
-          <div className="plus_text"> Добавить тестовую локацию</div>
+        <button onClick={addNewTLocal}>
+          <div></div>
+          <div className="plus_text">Добавить тестовую локацию</div>
         </button>
       </div>
     </div>

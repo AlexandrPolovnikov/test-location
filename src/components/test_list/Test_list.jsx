@@ -1,12 +1,17 @@
 import React from "react";
 import Test_location from "../location/Test_location";
 
-const Test_list = ({ posts, title, remove, id }) => {
+const Test_list = ({ posts, remove }) => {
+  console.log(posts);
   return (
     <div>
-      <h1 className="header__item">{title}</h1>
       {posts.map((post, index) => (
-        <Test_location remove={remove} number={index + 1} post={post} id={id} />
+        <Test_location
+          remove={remove}
+          number={index + 1}
+          post={post}
+          key={post.id}
+        />
       ))}
     </div>
   );
