@@ -34,15 +34,14 @@
 
 .test_prompt {
   display: grid;
-  grid-template-columns: 1fr 9fr;
+  grid-template-columns: 1.5fr 8.5fr;
   padding: 5px;
   font-size: 18px;
   margin-left: 30px;
 }
 
 .test_prompt input {
-  height: 40%;
-  margin-top: 10px;
+  height: 50%;
 }
 .local {
   display: grid;
@@ -51,7 +50,7 @@
   height: 25px;
   margin-left: 30px;
 }
-.enviro {
+.envira {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: fit-content;

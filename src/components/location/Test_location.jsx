@@ -26,17 +26,23 @@ const test_location = (props) => {
           </p>
           <input></input>
         </div>
-        <div className={style.enviro}>
-          <p>Среда</p>
+        <div className={style.envira}>
+          <p>
+            Среда <i class="fa-brands fa-envira"></i>
+          </p>
           <input></input>
         </div>
         <div className={style.server}>
-          <p>Серверы</p>
+          <p>
+            Серверы <i class="fa-solid fa-server"></i>
+          </p>
           <input></input>
         </div>
       </div>
       <div className={style.test_prompt}>
-        <p>Подсказка</p>
+        <p>
+          Подсказка <i class="fa-solid fa-question"></i>
+        </p>
         <input></input>
       </div>
     </div>

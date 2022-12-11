@@ -4,6 +4,7 @@ import { observer } from "mobx-react-lite";
 import { storeContext } from "./store.ts";
 
 import Test_list from "./components/test_list/Test_list.jsx";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const App = () => {
   const [posts, setPosts] = useState([]);
@@ -31,7 +32,9 @@ const App = () => {
       <div className="plus_location">
         <button onClick={addNewTLocal}>
           <div></div>
-          <div className="plus_text">Добавить тестовую локацию</div>
+          <div className="plus_text">
+            <i class="fa-solid fa-plus"></i> Добавить тестовую локацию
+          </div>
         </button>
       </div>
     </div>
