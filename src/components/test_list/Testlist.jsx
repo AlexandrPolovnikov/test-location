@@ -1,12 +1,11 @@
 import React from "react";
-import Test_location from "../location/Test_location";
+import Testlocation from "../location/Testlocation";
 
-const Test_list = ({ posts, remove }) => {
-  console.log(posts);
+const Testlist = ({ posts, remove }) => {
   return (
     <div>
       {posts.map((post, index) => (
-        <Test_location
+        <Testlocation
           remove={remove}
           number={index + 1}
           post={post}
@@ -17,4 +16,4 @@ const Test_list = ({ posts, remove }) => {
   );
 };
 
-export default Test_list;
+export default Testlist;

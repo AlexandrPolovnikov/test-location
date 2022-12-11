@@ -1,7 +1,7 @@
-import React from "react";
-import style from "./Test_location.module.css";
+import React, { useState } from "react";
+import style from "./Testlocation.module.css";
 
-const test_location = (props) => {
+const Testlocation = (props) => {
   return (
     <div className={style.window}>
       <div className={style.test_local}>
@@ -43,10 +43,10 @@ const test_location = (props) => {
         <p>
           Подсказка <i class="fa-solid fa-question"></i>
         </p>
-        <input></input>
+        <input type="text" placeholder="Комментарий по локации" />
       </div>
     </div>
   );
 };
 
-export default test_location;
+export default Testlocation;

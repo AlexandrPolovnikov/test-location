@@ -9,13 +9,25 @@
   padding: 15px;
 }
 
+/* .window.active {
+  outline: 3px solid blue;
+  height: 150px;
+  width: auto;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 8px;
+  padding: 15px;
+} */
+
 .icon h3 {
   margin-left: 15px;
 }
 
 .test_local {
   display: grid;
-  grid-template-columns: 2% 88% 10%;
+  grid-template-columns: 20px auto 30px;
   padding: 5px;
   margin: 5px;
 }
@@ -34,7 +46,7 @@
 
 .test_prompt {
   display: grid;
-  grid-template-columns: 1.5fr 8.5fr;
+  grid-template-columns: 100px auto;
   padding: 5px;
   font-size: 18px;
   margin-left: 30px;

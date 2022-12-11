@@ -2,9 +2,7 @@ import React, { useContext, useState } from "react";
 import "./App.css";
 import { observer } from "mobx-react-lite";
 import { storeContext } from "./store.ts";
-
-import Test_list from "./components/test_list/Test_list.jsx";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Testlist from "./components/test_list/Testlist";
 
 const App = () => {
   const [posts, setPosts] = useState([]);
@@ -28,7 +26,13 @@ const App = () => {
 
   return (
     <div className="App">
-      <Test_list posts={posts} remove={removePost} key={createTL.id} />
+      <Testlist posts={posts} remove={removePost} key={createTL.id} />
+      <div>
+        {/* <select>
+          <option value="valuel">По названию</option>
+          <option value="valuel">По id</option>
+        </select> */}
+      </div>
       <div className="plus_location">
         <button onClick={addNewTLocal}>
           <div></div>
