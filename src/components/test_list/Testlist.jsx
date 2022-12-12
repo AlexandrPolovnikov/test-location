@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Testlocation from "../location/Testlocation";
 
 const Testlist = ({ posts, remove }) => {
