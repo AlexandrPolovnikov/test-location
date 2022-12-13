@@ -9,6 +9,10 @@
   padding: 15px;
 }
 
+.window:hover {
+  border: 2px solid blue;
+}
+
 .icon h3 {
   margin-left: 15px;
 }
