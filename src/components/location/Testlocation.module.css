@@ -9,9 +9,9 @@
   padding: 15px;
 }
 
-.window:hover {
+/* .window:active {
   border: 2px solid blue;
-}
+} */
 
 .icon h3 {
   margin-left: 15px;
@@ -31,7 +31,7 @@
 
 .test_info {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 30% 30% 30%;
   padding: 5px;
   font-size: 18px;
 }
@@ -50,23 +50,24 @@
 .local {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: fit-content;
+  /* width: fit-content; */
   height: 25px;
   margin-left: 30px;
 }
 .envira {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: fit-content;
+  /* width: fit-content; */
   height: 25px;
-  margin-left: 30px;
+  margin-left: 20%;
 }
 .server {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: fit-content;
+  /* width: fit-content; */
   height: 25px;
   margin-left: 30px;
+  margin-left: 20%;
 }
 
 .trash {

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import style from "./Testlocation.module.css";
+import data from "../../data.json";
 
 const Testlocation = (props) => {
+  console.log(data.locations.name);
   return (
     <div className={style.window}>
       <div className={style.test_local}>
@@ -25,19 +27,25 @@ const Testlocation = (props) => {
           <p>
             Локация <i class="fa-solid fa-location-dot"></i>
           </p>
-          <input></input>
+          <select>
+            <option>locations</option>
+          </select>
         </div>
         <div className={style.envira}>
           <p>
             Среда <i class="fa-brands fa-envira"></i>
           </p>
-          <input></input>
+          <select>
+            <option>envs</option>
+          </select>
         </div>
         <div className={style.server}>
           <p>
             Серверы <i class="fa-solid fa-server"></i>
           </p>
-          <input></input>
+          <select>
+            <option> servers</option>
+          </select>
         </div>
       </div>
       <div className={style.test_prompt}>
